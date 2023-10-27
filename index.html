@@ -414,7 +414,7 @@
           </span>
         </h2> -->
         <div class="contact__form-container">
-          <form action="#" class="contact__form">
+          <form onsubmit="sendEmail()"; reset(); return false; class="contact__form">
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
@@ -471,5 +471,6 @@
       <p>Copyright © 2022 Pushpanath Murali</p>
     </footer>
     <script src="script.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </body>
 </html>
