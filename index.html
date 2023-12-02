@@ -66,13 +66,13 @@
             src="./assets/linkedin.png"
             alt="linkedin"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/pushpanath-murali-66600a239/'"
+            onclick="window.open('https://www.linkedin.com/in/pushpanath-murali-66600a239/', '_blank')"
           />
           <img
             src="./assets/github.png"
             alt="github"
             class="icon"
-            onclick="location.href='https://github.com/Pushpanathsamaritan'"
+            onclick="window.open('https://github.com/Pushpanathsamaritan', '_blank')"
           />
         </div>
       </div>
@@ -394,9 +394,12 @@
             src="./assets/linkedin.png"
             alt="linkedin icon"
             class="icon contact-icon"
+            target="_blank"
           />
           <p>
-            <a href="http://www.linkedin.com/in/pushpanath-murali-66600a239"
+            <a
+              href="http://www.linkedin.com/in/pushpanath-murali-66600a239"
+              target="_blank"
               >linkedIn</a
             >
           </p>
@@ -414,7 +417,14 @@
           </span>
         </h2> -->
         <div class="contact__form-container">
-          <form onsubmit="sendEmail()"; reset(); return false; class="contact__form">
+          <form
+            onsubmit="sendEmail()"
+            ;
+            reset();
+            return
+            false;
+            class="contact__form"
+          >
             <div class="contact__form-field">
               <label class="contact__form-label" for="name">Name</label>
               <input
